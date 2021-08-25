@@ -1,0 +1,169 @@
+/* colors */
+/* 
+    blue: #3200F2; 
+    gray: #545454;
+    gray nav: #323032;
+
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+a, a:visited, a:active, a:hover {
+    color: black
+}
+
+
+.container {
+    max-width: 1500px;
+}
+
+
+/* HEADER */
+header, header .container {
+    height: 110px;    
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: 550;
+}
+
+header .container {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.nav-menu a {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    margin: 55px;
+    font-size: 26px;
+    color: #323032;
+}
+
+.nav-menu a:hover {
+    color: #181718;
+}
+
+.nav-menu .active {
+    color: #3200F2;
+}
+.nav-menu .active:before {
+    content: "< ";
+    padding-right: 10px;
+}
+.nav-menu .active:after {
+    content: " >";
+    padding-left: 10px;
+}
+
+@media (max-width: 900px) {
+    header {
+        display: none;
+    }
+}
+/* HEADER */
+
+
+.container-line {
+    display: flex;
+}
+
+
+/* WHOAMI */
+.whoami {
+    height: 720px;
+    display: flex;
+    justify-content: center;
+}
+.whoami .container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
+.social-nav {
+    padding-right: 50px;
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.social-icon, .scroll-icon {
+    fill: #3200F2;
+    width: 35px;
+    height: 35px;
+}
+
+
+.whoami-view {
+    display: flex;
+}
+.title {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+.work {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #545454;
+    font-weight: bold;
+}
+.desc {
+    font-size: 24px;
+    color: #545454;
+    margin-bottom: 50px;
+}
+
+.btn-contact_me {
+    background-color: #3200F2;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    line-height: 50px;
+}
+.btn-image {
+    display: flex;
+    align-items: center;
+}
+.btn-icon {
+    fill: white;
+    width: 30px;
+    height: 30px;
+}
+.avatar img {
+    width: 620px;
+}
+/* WHOAMI */
+
+.scrolldown {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: 600;
+    display: flex;
+    color: #323032;
+    line-height: 35px;
+    font-size: 24px;
+
+    margin-top: 125px;
+    margin-left: 85px;
+}
+
+.scrolldown:hover {
+    position: relative;
+    top: 2px;
+}
